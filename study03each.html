@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>属性练习</title>
+     <script src="jquery.min.1.8.2.js"></script>
+  </head>
+<body>
+    <table class="tab" border="1px" cellspacing="" cellpadding="">
+    	<tr>
+            <td>1231</td>
+            <td>1231</td>
+            <td>1231</td>
+        </tr>
+        <tr>
+            <td>1231</td>
+            <td>1231</td>
+            <td>1231</td>
+        </tr>
+        <tr>
+            <td>1231</td>
+            <td>1231</td>
+            <td>1231</td>
+        </tr>
+    </table>
+</body>
+<script>
+ let arr = {"#":1,"FirstName":"Kobe","LastName":"Braent"}
+
+ $(function(){
+     let newtr = $("<tr></tr>")
+    $.each(arr,function(index,value){
+    let newtd = $("<td>" + value +"</td>")
+ 	$(newtr).append(newtd)
+   })
+     $(".tab").append(newtr)
+ })
+</script>
+</html>

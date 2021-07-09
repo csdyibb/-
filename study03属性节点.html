@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>属性练习</title>
+     <script src="jquery.min.1.8.2.js"></script>
+  </head>
+<body>
+    <span class = "span" name="it6666">123</span>
+</body>
+<script>
+    let span = document.getElementsByClassName("span")[0]
+    console.log(span.getAttribute("name"));
+    span.setAttribute("name","it888888");
+   
+    $(function(){
+        let span = $(".span")
+        console.log(span.attr())
+    })
+    
+        
+</script>
+  
+
+</html>

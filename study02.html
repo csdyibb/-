@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>层次选择器</title>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.js"></script>
+</head>
+
+<body>
+    <!-- 
+        选择器，看文档四种
+        1、后代选择器
+            格式:父元素 指定元素
+            实例:$("父元素 指定元素")
+            选择父元素所有指定元素
+        2、子代选择器
+            格式:父元素>指定元素
+            实例:$("父元素>指定元素")
+            父亲元素所有的第一代指定元素
+        3、相邻选择器
+            格式:元素+指定元素(+号隔开)
+            实例:$("元素+指定元素")
+        4、同辈选择器
+            格式:元素 ~ 指定元素
+            实例:$("元素 ~ 指定元素")
+
+     -->
+    <!--   1、后代选择器
+            格式:父元素 指定元素
+            实例:$("父元素 指定元素")
+            选择父元素所有指定元素
+     -->
+     <script>
+         $(function(){
+            console.log($("form input"))
+         })
+        
+     </script>
+     <!-- 
+         2、子代选择器
+            格式:父元素>指定元素
+            实例:$("父元素>指定元素")
+            父亲元素所有的第一代指定元素
+      -->
+      <script>
+        $(function(){
+           console.log($("form>input"))
+        })
+       
+    </script>
+    <form>
+        <label>Name:</label>
+        <input name="name" />
+        <fieldset>
+            <label>Newsletter:</label>
+            <input name="newsletter" />
+        </fieldset>
+    </form>
+    <input name="none" />
+
+</body>
+
+</html>

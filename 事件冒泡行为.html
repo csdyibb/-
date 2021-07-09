@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>属性练习</title>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+        }
+        .father{
+            width: 200px;
+            height: 200px;
+            background: red;
+        }
+        .son{
+            width: 100px;
+            height: 100px;
+            background: blue;
+        }
+    </style>
+     <script src="jquery.min.1.8.2.js"></script>
+  </head>
+<body>
+    <div class="father">
+        <div class="son">
+
+        </div>
+    </div>
+    <a href="http://www.baidu.com">我是百度</a>
+    <form action="http://www.taobao.com">
+        <input type="text">
+        <input type="submit">
+    </form>
+</body>
+<script>
+    // $(".son").click(function(){
+    //     alert("son")
+    //     return false
+    // })
+    $(".son").click(function(event){
+        alert("son")
+       // return false
+       event.stopPropagation()
+    })
+    $(".father").click(function(){
+        alert("father")
+    })
+    $("a").on("click",function(event){
+        alert("弹出注册框")
+       // return false
+       event.preventDefault()
+    })
+    $("form").on("click",function(event){
+        alert("弹出注册框")
+       // return false
+       event.preventDefault()
+    })
+</script>
+  
+
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>属性练习</title>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.js"></script>
+    <style>
+        .select {
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="../JQuery学习/Photo/back.png" alt="nihao" class="photo">
+    <input type="button" value="切换图片" id="btn">
+    <input type="button" value="去掉图片" id="btn2">
+    <input type="button" value="增加一个class" id="btn3">
+    <input type="button" value="去掉一个class" id="btn4">
+    <p>你好吗</p>
+</body>
+<!-- // let a = 2
+    // alert(a) -->
+<!-- // $(function(){
+    //     let src = $(".photo").attr("src")
+    //     $('#btn').click(function(){
+    //         let newsrc = "../JQuery学习/Photo/sb.bmp"
+    //         $('.photo').attr("src",newsrc)
+    //     })
+    //     $('#btn2').click(function(){
+    //         $('.photo').removeAttr("src")
+    //     })
+    //     $('#btn3').click(function(){
+    //         $('.photo').addClass("select")
+    //     })
+    //     $('#btn4').click(function(){
+    //         $('.photo').removeClass("select")
+    //     })
+    //     alert($('p').html())
+    //     $("p").html("Hello <b>world</b>!");
+    // }) -->
+
+
+<script>
+    // $("#btn").click(function () {
+
+    //         let xhr = null
+
+    //         //	判断浏览器是否支持XMLHttpRequest
+    //         if (window.XMLHttpRequest) {
+    //             // 对于 ie 6+的浏览器
+    //             // 新建一个XMLHttpRequest实例对象
+    //             xhr = new XMLHttpRequest()
+    //         } else if (window.ActiveXObject) {
+    //             // 对于 ie 5 ie 6 的浏览器
+    //             // ActiveXObject
+    //             xhr = new ActiveXObject("Microsoft.XMLHTTP")
+    //         }
+
+    //         if (xhr) {
+
+    //             // ---------------------  GET 请求  ------------------------------------
+    //             // open: ajax发送什么请求,以什么方式发送,是否异步
+    //             // xhr.open("get", 'http://localhost:3000/api/get?username=sss&key=555',true)
+    //             //这是使用port请求方法的时候向服务器发送数据的方法，这里可以直接为空，也可以为null
+    //             // xhr.send(null)
+    //             // ---------------------  POST 请求 参数格式 1  ------------------------------------
+    //             xhr.open('get', "http://10.12.20.244:8090/manager/visitors", true)
+    //             xhr.send(null)
+    //             // 设置请求 json 参数格式的类型（POST请求必须要设置）
+    //             // 不设置的话会报错
+    //             // xhr.setRequestHeader('Content-Type', 'application/json')
+
+    //             // xhr.send(JSON.stringify({ "username": '154', "age": 15 }))
+    //             // ---------------------  POST 请求 参数格式 2 ------------------------------------
+    //             // xhr.open('post', "http://localhost:3000/api/post")
+
+    //             // xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+    //             // var params = 'username=' + 'aaa' + '&age=' + 15;
+    //             // xhr.send(params)
+
+    //             //------------------------------- 后续代码 ------------------------------------------
+    //             xhr.onreadystatechange = dealChange
+    //             function dealChange() {
+    //                 if (xhr.readyState === 4 && xhr.status === 200) {
+    //                     console.log(xhr.responseText)
+    //                 } else {
+    //                     console.log(xhr.readyState)
+    //                 }
+    //             }
+    //         } else {
+    //             alert('您的浏览器不支持ajax')
+    //         }
+        
+    // })
+
+    var  a = 100000;
+    var b = a.toLocaleString();
+    console.log(b);
+
+</script>
+
+</html>

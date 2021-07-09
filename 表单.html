@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script src="jquery.min.1.8.2.js"></script>
+    </head>
+
+    <body>
+        <form>
+            <input type="text" placeholder="请输入你的账号"/>
+            <input type="checkbox" />
+            <input type="radio" />
+            <input type="image" src="photo/back.png" />
+            <input type="file" />
+            <input type="submit" />
+            <input type="reset" />
+            <input type="password" />
+            <input type="button" value="按钮"/>
+            <select>
+                <option />
+            </select>
+            <textarea></textarea>
+            <button>你好吗</button>
+        </form>
+    </body>
+    <script>
+        let photopath = "photo/sb.bmp"
+        $("input[type='button']").click(function(){
+           console.log( $(":text").val()); 
+           return false
+        })
+        $(":image").click(function(){
+            let src = photopath
+            $(this).attr("src",src)
+            return false
+        })
+       
+    </script>
+
+</html>

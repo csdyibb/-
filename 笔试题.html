@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.js"></script>
+</head>
+<body>
+  <script>
+      var objA = {prop1:42};
+      var objB = objA;
+      objB = {};
+      console.log(objA);
+      var arrA = [0,1,2,3,4,5,];
+      var arrB = arrA;
+      arrB[0] = 42;
+      console.log(arrA);
+
+      var arrA = [{prop1:"value of array A"},{someprop:"also value of array A!"},3,4,5];
+      var arrB = arrA;
+      arrB[0].prop1 = 42;
+      console.log(arrA);
+
+      var employee = "100000";
+      console.log(employee);
+
+
+      var employeeId = "1234abc";
+      (function() {
+          console.log(employeeId);
+          var employeeId = "122345";
+          (function(){
+              var employeeId = "abc1234";
+          }());
+      }());
+
+      (function(){
+          console.log(typeof fun);
+          var fun = function() {
+              console.log(你好);
+          };
+      }())
+
+      var employeeId = "abc123";
+      function foo () {
+          employeeId();
+          return;
+
+          function employeeId() {
+              console.log(typeof employeeId);
+          }
+      }
+      foo();
+
+      function foo(){
+          employeeId();
+          var product = "Car";
+          return;
+          function employeeId() {
+              console.log(product);
+          }
+      }
+  </script>
+</body>
+</html>

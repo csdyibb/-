@@ -1,0 +1,85 @@
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script src="jquery.min.1.8.2.js"></script>
+        <!-- <style>
+            .block::after{
+                content: '';
+                width: 100px;
+                height:1px;
+                display: block;
+                border-bottom: 1px solid rgb(0, 0, 0,1);
+            }
+        </style> -->
+    </head>
+
+    <body>
+        <table style="width:600px;text-align:center;">
+            <tr>
+                <td>姓名</td>
+                <td id="name" style="padding-bottom: 5px;border-bottom: 0.5px solid #000;"></td>
+            </tr>
+            <tr>
+                <td>状态</td>
+                <td id="status" style="padding-bottom: 5px;border-bottom: 0.5px solid #000;"></td>
+            </tr>
+            <tr>
+                <td>手机号</td>
+                <td id="phone" style="padding-bottom: 5px;border-bottom: 0.5px solid #000;"></td>
+            </tr>
+            <tr>
+                <td>QQ</td>
+                <td id="QQ" style="padding-bottom: 5px;border-bottom: 0.5px solid #000;"></td>
+            </tr>
+            <tr>
+                <td>住址</td>
+                <td id="address" style="padding-bottom: 5px;border-bottom: 0.5px solid #000;"></td>
+            </tr>
+
+        </table>
+
+        <div class="block">
+            123
+        </div>
+    </body>
+    <script>
+        $(function () {
+            let peopleMsg = {
+                name: "陈胜",
+                status: "1",
+                phone: "15971894864",
+                mail: "453724991@qq.com",
+                QQ: "453724991",
+                address: "湖北省红安县城关镇陈升村三组"
+            }
+            //     let newtd = [];
+            //     newtd = $("table td")
+            //     console.log(newtd.length);
+            //     let tdid = newtd[1]
+            //     let id = $(tdid).attr("id") 
+            //     console.log("~~~~~~~~`",tdid);
+            //     console.log("id======",id);
+            //    $.each(peopleMsg,function(key,value) {
+            //          $.map(newtd,function(val,index){
+            //              let id = $(newtd[index]).attr("id");
+            //              if(id === key) {
+            //                 $("#" +key).html(value);
+            //              }
+
+
+            //          })
+            //     })
+            $.each(peopleMsg, function (key, value) {
+                $("#" + key).html(value)
+            })
+        })
+
+    </script>
+
+    </html>

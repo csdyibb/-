@@ -1,0 +1,74 @@
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="Access-Control-Allow-Origin" content="*">
+        <title>Document</title>
+        <script src="jquery.min.1.8.2.js"></script>
+        <link rel="shortcut icon" href="#">
+    </head>
+
+    <body>
+
+        <div>
+            <table id="tablestar"> 
+
+            </table>
+        </div>
+        <div id="div">
+           
+        </div>
+    </body>
+    
+     <script>
+         $(function(){
+            //  $.ajax({
+            //      url:'http://127.0.0.1:8088/index',
+            //      type:'get',
+            //      contentType:'application/json;charset=utf-8',
+            //      success:function(data){
+            //         let newtr =  $("<tr id='ads'></tr>")
+            //         $("#tablestar").append(newtr)
+            //        $.each(data,function(index,value) {
+            //          let newtd = $("<td>"+value.name+"</td>")
+            //          $("#ads").append(newtd);
+            //        })
+            //      }
+            //  })
+
+            //  $.ajax({
+            //      url:'http://127.0.0.1:8088/index2',
+            //      type:'get',
+            //     //  data:{id:11,name:"陈胜",pwd:"123654"},
+            //     //  contentType:'application/json;charset=utf-8',
+            //      success:function(data){
+            //          console.log(data[0]);
+            //         $("#div").html(data[0].detail)
+            //      }
+            //  })
+
+            // $.ajax({
+            //      url:'http://127.0.0.1:8088/index3',
+            //      type:'post',
+            //      data:{id:1,name:"321645"},
+            //     //  contentType:'application/json;charset=utf-8',
+            //      success:function(data){
+            //         console.log(data);
+            //      }
+            //  })
+
+                    $.ajax({
+                 url:'http://127.0.0.1:8088/index',
+                 type:'get',
+                 success:function(data){
+                 console.log(data);
+                 }
+             })
+         })
+     </script>
+
+    </html>

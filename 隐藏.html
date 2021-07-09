@@ -1,0 +1,102 @@
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script src="jquery.min.1.8.2.js"></script>
+        <style>
+            body,html{
+                margin:0px;
+
+            }
+            .block{
+                width: 100%;
+                height:40px;
+                background-color: aquamarine;
+            }
+            .logo{
+                float: right;
+                width: 120px;
+                height:40px;
+                background-color: rgb(255, 127, 138);
+            }
+            .logo2{
+                display: none;
+                float: right;
+                width: 120px;
+                height:40px;
+                background-color: rgb(140, 127, 255);
+            }
+            .block2{
+                display: none;
+                width: 100%;
+                height:120px;
+                background-color: rgb(20, 114, 236);
+            }
+        </style>
+    </head>
+
+    <body>
+        
+
+        <div class="block">
+           <div class="logo">
+                
+                <ul style="list-style: none; width: 120px;
+                height:40px;">
+                    <li>
+                        中控权限
+                        <ul style="float: right;background-color: red;">
+                            <li>123</li>
+                            <li>456</li>
+                            <li>789</li>
+                            <li>312</li>
+                        </ul>
+                    </li>
+                </ul>
+          
+           </div>
+           
+        </div>
+        <!-- <div class="block">
+            <div class="logo2" name="true">
+
+            </div>
+        </div>
+        <div class="block2">
+           
+        </div> -->
+    </body>
+    <script>
+       $(function(){ 
+             
+           let flag = $(".logo2").attr("name")
+           $(".logo").click(function(){
+            
+
+            $(".logo2").fadeToggle(300);
+
+               console.log("name:  " , flag);
+           })
+            //    if(flag) {
+            //     $(".logo2").css("display","block");
+            //     $(".logo2").attr("name","false")
+            //    } else{
+            //        alert(1223)
+            //        $(".logo2").attr("data-flag","true")
+            //    }
+        //     $(".logo2").attr("name",false)
+        //    })
+           $(".logo2").click(function(){
+               $(".block2").css("display","block")
+           })
+        
+       })
+        
+    </script>
+
+    </html>
